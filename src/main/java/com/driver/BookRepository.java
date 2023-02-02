@@ -55,7 +55,7 @@ import org.springframework.stereotype.Repository;
         public List<Book> findBooksByAuthor(String author){
             List<Book>list=new ArrayList<>();
             for(int i:dB.keySet()){
-                if((dB.get(i).getAuthor()).equals(author)){
+                if(dB.get(i).getAuthor().equals(author)){
                     list.add(dB.get(i));
                 }
             }
@@ -65,7 +65,7 @@ import org.springframework.stereotype.Repository;
         public List<Book> findBooksByGenre(String genre){
             List<Book> list=new ArrayList<>();
             for(int i:dB.keySet()){
-                if((dB.get(i).getGenre()).equals(genre)){
+                if(dB.get(i).getGenre().equals(genre)){
                     list.add(dB.get(i));
                 }
             }

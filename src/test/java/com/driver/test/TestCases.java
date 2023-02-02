@@ -17,7 +17,7 @@ import com.driver.BookController;
 import com.driver.DemoApplication;
 
 @SpringBootTest(classes = DemoApplication.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+//@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestCases {
     
 }
