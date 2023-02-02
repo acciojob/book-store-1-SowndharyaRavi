@@ -17,14 +17,14 @@ import org.springframework.stereotype.Repository;
 
         Map<Integer,Book> dB=new HashMap<>();
         private int id=1;
-        public Book save(Book book){
+        public Book createBook(Book book){
             book.setId(id);
             dB.put(id,book);
             id++;
             return book;
         }
 
-        public Book findBookById(int id){
+        public Book getBookById(int id){
             if(dB.containsKey(id)){
                 return dB.get(id);
             }
